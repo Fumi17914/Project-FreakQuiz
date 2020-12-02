@@ -11,6 +11,7 @@
 		D85E26472577F1FB00D20A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E26462577F1FB00D20A74 /* SceneDelegate.swift */; };
 		D85E264F2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D85E264D2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld */; };
 		D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85E26502577F1FD00D20A74 /* Assets.xcassets */; };
+		D8966B80257825E600707EA6 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8966B7F257825E600707EA6 /* Launch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D85E264E2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_FreakQuiz.xcdatamodel; sourceTree = "<group>"; };
 		D85E26502577F1FD00D20A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85E26552577F1FD00D20A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8966B7F257825E600707EA6 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,16 +54,16 @@
 		D85E26432577F1FB00D20A74 /* Project FreakQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				D85E26502577F1FD00D20A74 /* Assets.xcassets */,
+				D8966B762578249E00707EA6 /* Launch */,
+				D8966B77257824A700707EA6 /* Mode */,
+				D8966B78257824AD00707EA6 /* ChoosePlayer */,
+				D8966B79257824B500707EA6 /* PlayerReady */,
+				D8966B7A257824BD00707EA6 /* Question */,
 				D8966B7B257824E100707EA6 /* Correct */,
 				D8966B7C257824E600707EA6 /* Error */,
 				D8966B7D257824EB00707EA6 /* Test */,
 				D8966B7E257824F200707EA6 /* Score */,
-				D8966B7A257824BD00707EA6 /* Question */,
-				D8966B79257824B500707EA6 /* PlayerReady */,
-				D8966B78257824AD00707EA6 /* ChoosePlayer */,
-				D8966B77257824A700707EA6 /* Mode */,
-				D8966B762578249E00707EA6 /* Launch */,
-				D85E26502577F1FD00D20A74 /* Assets.xcassets */,
 				D85E26442577F1FB00D20A74 /* AppDelegate.swift */,
 				D85E26462577F1FB00D20A74 /* SceneDelegate.swift */,
 				D85E26552577F1FD00D20A74 /* Info.plist */,
@@ -73,6 +75,7 @@
 		D8966B762578249E00707EA6 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				D8966B7F257825E600707EA6 /* Launch.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */,
+				D8966B80257825E600707EA6 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
