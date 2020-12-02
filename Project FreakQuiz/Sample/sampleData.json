@@ -1,0 +1,157 @@
+{
+    "questions":[
+        {
+            "id":0,
+            "mode":0,
+            "question":"¿Cuándo salió el primer juego de The Last of Us?",
+            "options":[
+                "2012",
+                "2013",
+                "2015",
+                "2011"
+            ],
+            "answer":1
+        },
+        {
+            "id":1,
+            "mode":0,
+            "question":"¿Qué fenómeno hace que los enemigos caídos vuelvan de entre los muertos más fuertes en The Legend of Zelda: Breath of the Wild?",
+            "options":[
+                "Luna carmesí",
+                "El eclipse de los muertos",
+                "Luna de Sangre",
+                "Resurrección lunar"
+            ],
+            "answer":0
+        },
+        {
+            "id":2,
+            "mode":0,
+            "question":"¿Cómo se llama el hijo de Kratos?",
+            "options":[
+                "Baldur",
+                "Brok",
+                "Atreus",
+                "Floki"
+            ],
+            "answer":2
+        },
+        {
+            "id":3,
+            "mode":0,
+            "question":"¿Quién escribió El código Da Vinci?",
+            "options":[
+                "Ridley Scott",
+                "Michael Connelly",
+                "Dan Brown",
+                "Jo Nesbo"
+            ],
+            "answer":2
+        },
+        {
+            "id":4,
+            "mode":0,
+            "question":"¿Qué escritor afirmó no acordarse de haber escrito muchas de sus obras?",
+            "options":[
+                "Juri Adler Olssen",
+                "Stephen King",
+                "Neil Gaiman",
+                "Edgar Allan Poe"
+            ],
+            "answer":1
+        },
+        {
+            "id":5,
+            "mode":0,
+            "question":"¿Cómo se llama la quinta parte de la Saga Crepúsculo?",
+            "options":[
+                "Amanacer Parte 2",
+                "Amanecer Parte 1",
+                "Luz del Alba",
+                "Sol de Medianoche"
+            ],
+            "answer":3
+        },
+        {
+            "id":6,
+            "mode":0,
+            "question":"¿Cómo le llama Ramsay a Theon?",
+            "options": [
+                "Hodor",
+                "Hediondo",
+                "Eunuco",
+                "Harapiento"
+            ],
+            "answer":1
+        },
+        {
+            "id":7,
+            "mode":1,
+            "question":"¿Cuál fue la primera película de Disney?",
+            "options": [
+                "Blancanieves",
+                "Pinocho",
+                "Dumbo",
+                "Fantasía"
+            ],
+            "answer":0
+        },
+        {
+            "id":8,
+            "mode":1,
+            "question":"¿Cuál es el nombre original del ángel caído?",
+            "options":[
+                "Samael",
+                "Amenadiel",
+                "Uriel",
+                "Gabriel"
+            ],
+            "answer":0
+        },
+        {
+            "id":9,
+            "mode":1,
+            "question":"¿Cómo se llama el director de la trilogía de El Señor de los Anillos?",
+            "options":[
+                "Alfonso Cuarón",
+                "Guillermo del Toro",
+                "Peter Jackson",
+                "George Lucas"
+            ],
+            "answer":2
+        },
+        {
+            "id":10,
+            "mode":1,
+            "question":"¿A qué trama de qué película se parece más Civil War II?",
+            "options":[
+                "Efecto Mariposa",
+                "Minority Report",
+                "Terminator 2",
+                "La máquina del tiempo"
+            ],
+            "answer":1
+        },
+        {
+            "id":11,
+            "mode":1,
+            "question":"¿Cuál es la obra más conocida de Lee Bermejo?",
+            "options":[
+                "Batman: Largo Halloween",
+                "Simon Dark",
+                "Batman: Noel",
+                "Batman: Año uno"
+            ],
+            "answer":2
+        }
+    ],
+    
+    "tests": [
+        "Quédate en ropa interior y haz 10 flexiones",
+        "Intenta tocarte codo derecho con mano derecha, codo izquierdo con mano izquierda y morderte la oreja. Deja que te saquen una foto",
+        "Acábate la copa",
+        "Da un trago por cada persona con la que hayas tenido sexo",
+        "Ponle la manos en la cara a cualquier jugador o jugadora, mírale a los ojos y dile que es repugnante"
+    ]
+}
+

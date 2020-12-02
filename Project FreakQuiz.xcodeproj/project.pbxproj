@@ -29,6 +29,12 @@
 		D8C61A0C25782B4700D22206 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A0B25782B4700D22206 /* TestViewController.swift */; };
 		D8C61A0F25782B5100D22206 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A0E25782B5100D22206 /* ScoreViewController.swift */; };
 		D8C61A1225782B5E00D22206 /* ScoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1125782B5E00D22206 /* ScoreViewCell.swift */; };
+		D8C61A1625782E1F00D22206 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1525782E1F00D22206 /* Game.swift */; };
+		D8C61A1925782E2D00D22206 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1825782E2D00D22206 /* GameData.swift */; };
+		D8C61A1C25782E3800D22206 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1B25782E3800D22206 /* Player.swift */; };
+		D8C61A1F25782E4400D22206 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1E25782E4400D22206 /* Question.swift */; };
+		D8C61A2225782E5400D22206 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2125782E5400D22206 /* sampleData.json */; };
+		D8C61A2725782EF400D22206 /* UIVIewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		D8C61A0B25782B4700D22206 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		D8C61A0E25782B5100D22206 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		D8C61A1125782B5E00D22206 /* ScoreViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewCell.swift; sourceTree = "<group>"; };
+		D8C61A1525782E1F00D22206 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D8C61A1825782E2D00D22206 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		D8C61A1B25782E3800D22206 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D8C61A1E25782E4400D22206 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
+		D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D85E26502577F1FD00D20A74 /* Assets.xcassets */,
+				D8C61A2525782EB800D22206 /* Extensions */,
 				D8C61A1425782B7300D22206 /* Sample */,
 				D8966B762578249E00707EA6 /* Launch */,
 				D8966B77257824A700707EA6 /* Mode */,
@@ -191,8 +204,21 @@
 		D8C61A1425782B7300D22206 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				D8C61A1525782E1F00D22206 /* Game.swift */,
+				D8C61A1825782E2D00D22206 /* GameData.swift */,
+				D8C61A1B25782E3800D22206 /* Player.swift */,
+				D8C61A1E25782E4400D22206 /* Question.swift */,
+				D8C61A2125782E5400D22206 /* sampleData.json */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		D8C61A2525782EB800D22206 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,17 +299,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C61A0C25782B4700D22206 /* TestViewController.swift in Sources */,
+				D8C61A1F25782E4400D22206 /* Question.swift in Sources */,
 				D8C61A0F25782B5100D22206 /* ScoreViewController.swift in Sources */,
 				D85E26452577F1FB00D20A74 /* AppDelegate.swift in Sources */,
+				D8C61A1625782E1F00D22206 /* Game.swift in Sources */,
 				D8C61A0025782B1C00D22206 /* PlayerReadyViewController.swift in Sources */,
 				D8C61A0325782B2800D22206 /* QuestionViewController.swift in Sources */,
 				D8C619FD25782B0900D22206 /* ChoosePlayerViewController.swift in Sources */,
 				D85E264F2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld in Sources */,
 				D85E26472577F1FB00D20A74 /* SceneDelegate.swift in Sources */,
+				D8C61A2725782EF400D22206 /* UIVIewExtensions.swift in Sources */,
 				D8C619FA25782AF700D22206 /* ModeViewController.swift in Sources */,
 				D8C61A1225782B5E00D22206 /* ScoreViewCell.swift in Sources */,
+				D8C61A1925782E2D00D22206 /* GameData.swift in Sources */,
 				D8C61A0925782B3D00D22206 /* ErrorViewController.swift in Sources */,
+				D8C61A1C25782E3800D22206 /* Player.swift in Sources */,
 				D8C61A0625782B3200D22206 /* CorrectViewController.swift in Sources */,
+				D8C61A2225782E5400D22206 /* sampleData.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
