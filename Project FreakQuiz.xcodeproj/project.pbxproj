@@ -35,6 +35,10 @@
 		D8C61A1F25782E4400D22206 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1E25782E4400D22206 /* Question.swift */; };
 		D8C61A2225782E5400D22206 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2125782E5400D22206 /* sampleData.json */; };
 		D8C61A2725782EF400D22206 /* UIVIewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */; };
+		D8C61A2F2578313200D22206 /* Mario.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A2E2578313200D22206 /* Mario.ttf */; };
+		D8C61A322578313F00D22206 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A312578313F00D22206 /* Pixel.ttf */; };
+		D8C61A352578314800D22206 /* Arcade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A342578314800D22206 /* Arcade.ttf */; };
+		D8C61A382578314F00D22206 /* Kratos.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A372578314F00D22206 /* Kratos.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,10 @@
 		D8C61A1E25782E4400D22206 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
 		D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtensions.swift; sourceTree = "<group>"; };
+		D8C61A2E2578313200D22206 /* Mario.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mario.ttf; sourceTree = "<group>"; };
+		D8C61A312578313F00D22206 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
+		D8C61A342578314800D22206 /* Arcade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.ttf; sourceTree = "<group>"; };
+		D8C61A372578314F00D22206 /* Kratos.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kratos.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				D85E26502577F1FD00D20A74 /* Assets.xcassets */,
+				D8C61A2D2578311200D22206 /* Fonts */,
+				D8C61A2B257830F300D22206 /* Delegate */,
 				D8C61A2525782EB800D22206 /* Extensions */,
 				D8C61A1425782B7300D22206 /* Sample */,
 				D8966B762578249E00707EA6 /* Launch */,
@@ -112,8 +122,6 @@
 				D8966B7C257824E600707EA6 /* Error */,
 				D8966B7D257824EB00707EA6 /* Test */,
 				D8966B7E257824F200707EA6 /* Score */,
-				D85E26442577F1FB00D20A74 /* AppDelegate.swift */,
-				D85E26462577F1FB00D20A74 /* SceneDelegate.swift */,
 				D85E26552577F1FD00D20A74 /* Info.plist */,
 				D85E264D2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld */,
 			);
@@ -221,6 +229,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D8C61A2B257830F300D22206 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D85E26462577F1FB00D20A74 /* SceneDelegate.swift */,
+				D85E26442577F1FB00D20A74 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		D8C61A2D2578311200D22206 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8C61A2E2578313200D22206 /* Mario.ttf */,
+				D8C61A312578313F00D22206 /* Pixel.ttf */,
+				D8C61A342578314800D22206 /* Arcade.ttf */,
+				D8C61A372578314F00D22206 /* Kratos.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,10 +309,14 @@
 				D8C619E625782A8B00D22206 /* PlayerReady.storyboard in Resources */,
 				D8C619F125782AAC00D22206 /* Error.storyboard in Resources */,
 				D8C619EE25782AA300D22206 /* Correct.storyboard in Resources */,
+				D8C61A322578313F00D22206 /* Pixel.ttf in Resources */,
 				D8C619F725782AC200D22206 /* Score.storyboard in Resources */,
 				D8C619E325782A7F00D22206 /* ChoosePlayer.storyboard in Resources */,
+				D8C61A382578314F00D22206 /* Kratos.otf in Resources */,
 				D8C619E925782A9500D22206 /* Question.storyboard in Resources */,
+				D8C61A352578314800D22206 /* Arcade.ttf in Resources */,
 				D8C619E025782A7200D22206 /* Main.storyboard in Resources */,
+				D8C61A2F2578313200D22206 /* Mario.ttf in Resources */,
 				D8C619F425782AB800D22206 /* Test.storyboard in Resources */,
 				D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */,
 				D8966B80257825E600707EA6 /* Launch.storyboard in Resources */,
