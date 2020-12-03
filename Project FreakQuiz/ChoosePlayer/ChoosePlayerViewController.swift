@@ -31,7 +31,7 @@ class ChoosePlayerViewController: UIViewController {
         selectedCharacter(sender: sender, button: spidermanButton, opacity: 0.25, player: Player.Characters.Spiderman.rawValue)
         selectedCharacter(sender: sender, button: deadpoolButton, opacity: 0.25, player: Player.Characters.Deadpool.rawValue)
         selectedCharacter(sender: sender, button: devilButton, opacity: 0.25, player: Player.Characters.Devil.rawValue)
-        selectedCharacter(sender: sender, button: wolverineButton, opacity: 0.25, player: Player.Characters.Lobezno.rawValue)
+//        selectedCharacter(sender: sender, button: wolverineButton, opacity: 0.25, player: Player.Characters.Lobezno.rawValue)
         selectedCharacter(sender: sender, button: girlButton, opacity: 0.25, player: Player.Characters.Girl.rawValue)
         selectedCharacter(sender: sender, button: doctorButton, opacity: 0.25, player: Player.Characters.Doctor.rawValue)
         selectedCharacter(sender: sender, button: indianaJonesButton, opacity: 0.25, player: Player.Characters.Indy.rawValue)
@@ -47,7 +47,7 @@ class ChoosePlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //configureFont()
+        configureFont()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
         batmanButton.frame = CGRect(x: 20, y: 188, width: 96, height: 96)
         batmanButton.setBackgroundImage(UIImage(named:"Batman"), for: .normal)
@@ -73,12 +73,19 @@ class ChoosePlayerViewController: UIViewController {
         noelButton.frame = CGRect(x: 159, y: 524, width: 96, height: 96)
         noelButton.setBackgroundImage(UIImage(named:"Papá Noel"), for: .normal)
         
-        wolverineButton.frame = CGRect(x: 298, y: 389, width: 96, height: 96)
-        wolverineButton.setBackgroundImage(UIImage(named:"Lobezno"), for: .normal)
+//        wolverineButton.frame = CGRect(x: 298, y: 389, width: 96, height: 96)
+//        wolverineButton.setBackgroundImage(UIImage(named:"Lobezno"), for: .normal)
         
         spidermanButton.frame = CGRect(x: 298, y: 188, width: 96, height: 96)
         spidermanButton.setBackgroundImage(UIImage(named:"Spider-Man"), for: .normal)
 
+    }
+    
+    
+    // MARK: Configurar tipo de letra en textos
+    private func configureFont() {
+        
+        titleLabel.font = UIFont(name: "PixelEmulator", size: titleLabel.font.pointSize)
     }
     
     // MARK: Enviar información a PlayerViewController
