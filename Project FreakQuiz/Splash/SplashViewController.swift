@@ -16,4 +16,11 @@ class SplashViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
           return .lightContent
     }
+    
+    
+    // MARK: ViewDidLoad
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
+    }
 }
