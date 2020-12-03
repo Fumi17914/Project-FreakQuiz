@@ -11,7 +11,7 @@
         <!--Splash View Controller-->
         <scene sceneID="F4L-xX-KqD">
             <objects>
-                <viewController id="2gy-Cn-KNt" customClass="SplashViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2gy-Cn-KNt" customClass="SplashViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HVD-Ic-ocz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

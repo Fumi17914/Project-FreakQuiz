@@ -11,7 +11,7 @@
         <!--Mode View Controller-->
         <scene sceneID="Oe8-fb-7bI">
             <objects>
-                <viewController id="ysO-2L-K4f" customClass="ModeViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ysO-2L-K4f" customClass="ModeViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFu-ee-qgT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                         <outlet property="difficultFreakMode" destination="PWN-TJ-9Zv" id="Uhh-Pb-Bk5"/>
                         <outlet property="easyMarioMode" destination="0c8-bh-mSn" id="VTX-IZ-Sb7"/>
                         <outlet property="titleLabel" destination="06n-Db-81e" id="sRe-6S-f88"/>
-                        <segue destination="zb6-rN-Ox2" kind="show" id="Kdq-lV-lcT"/>
+                        <segue destination="zb6-rN-Ox2" kind="show" identifier="SEGUE_FROM_MODE_TO_PLAYERS" id="Kdq-lV-lcT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjE-fx-McC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

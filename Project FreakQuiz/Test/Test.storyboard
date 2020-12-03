@@ -11,7 +11,7 @@
         <!--Test View Controller-->
         <scene sceneID="83o-dL-elQ">
             <objects>
-                <viewController id="dGz-eh-q4S" customClass="TestViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dGz-eh-q4S" customClass="TestViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qiX-YQ-3sP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

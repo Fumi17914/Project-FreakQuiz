@@ -11,7 +11,7 @@
         <!--Error View Controller-->
         <scene sceneID="0vJ-id-mIf">
             <objects>
-                <viewController id="JBl-js-g7w" customClass="ErrorViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="JBl-js-g7w" customClass="ErrorViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="io1-Rz-z0s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
