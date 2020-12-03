@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-u3-sqQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-u3-sqQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vcP-u3-sqQ" secondAttribute="height" multiplier="207:448" id="n9H-yU-ZbB"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APi-HS-YiR">
                                 <rect key="frame" x="20" y="754" width="374" height="108"/>
@@ -68,6 +70,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NfW-gF-Otr" firstAttribute="leading" secondItem="bQn-XT-TGd" secondAttribute="leading" constant="20" id="4TH-0G-04v"/>
+                            <constraint firstItem="vcP-u3-sqQ" firstAttribute="leading" secondItem="bQn-XT-TGd" secondAttribute="leading" id="5mf-xI-Rlk"/>
                             <constraint firstItem="NfW-gF-Otr" firstAttribute="top" secondItem="2iZ-bC-8bd" secondAttribute="bottom" id="9cJ-CZ-NgC"/>
                             <constraint firstItem="bQn-XT-TGd" firstAttribute="trailing" secondItem="P9H-MY-xTO" secondAttribute="trailing" constant="20" id="AXa-bI-wkA"/>
                             <constraint firstItem="bQn-XT-TGd" firstAttribute="trailing" secondItem="NfW-gF-Otr" secondAttribute="trailing" constant="20" id="DF7-aW-Erx"/>
@@ -80,8 +83,11 @@
                             <constraint firstItem="2iZ-bC-8bd" firstAttribute="leading" secondItem="bQn-XT-TGd" secondAttribute="leading" constant="20" id="cPm-2f-sHn"/>
                             <constraint firstItem="bQn-XT-TGd" firstAttribute="trailing" secondItem="keD-d2-i9U" secondAttribute="trailing" constant="20" id="em7-hf-4hK"/>
                             <constraint firstItem="bQn-XT-TGd" firstAttribute="trailing" secondItem="APi-HS-YiR" secondAttribute="trailing" constant="20" id="iMU-e7-5Jh"/>
+                            <constraint firstItem="vcP-u3-sqQ" firstAttribute="trailing" secondItem="bQn-XT-TGd" secondAttribute="trailing" id="iOI-55-iyB"/>
                             <constraint firstItem="APi-HS-YiR" firstAttribute="leading" secondItem="bQn-XT-TGd" secondAttribute="leading" constant="20" id="iSm-Lf-CfQ"/>
                             <constraint firstItem="P9H-MY-xTO" firstAttribute="leading" secondItem="bQn-XT-TGd" secondAttribute="leading" constant="20" id="jDA-4M-fNr"/>
+                            <constraint firstAttribute="bottom" secondItem="vcP-u3-sqQ" secondAttribute="bottom" id="sEO-2b-BBG"/>
+                            <constraint firstItem="vcP-u3-sqQ" firstAttribute="top" secondItem="io1-Rz-z0s" secondAttribute="top" id="txJ-dT-ske"/>
                         </constraints>
                     </view>
                     <connections>

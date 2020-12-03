@@ -49,36 +49,7 @@ class ChoosePlayerViewController: UIViewController {
         
         configureFont()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
-        batmanButton.frame = CGRect(x: 20, y: 188, width: 96, height: 96)
-        batmanButton.setBackgroundImage(UIImage(named:"Batman"), for: .normal)
         
-        deadpoolButton.frame = CGRect(x: 159, y: 356, width: 96, height: 96)
-        deadpoolButton.setBackgroundImage(UIImage(named:"Deadpool"), for: .normal)
-        
-        devilButton.frame = CGRect(x: 298, y: 356, width: 96, height: 96)
-        devilButton.setBackgroundImage(UIImage(named:"Diablo"), for: .normal)
-        
-        girlButton.frame = CGRect(x: 20, y: 356, width: 96, height: 96)
-        girlButton.setBackgroundImage(UIImage(named:"Aventurera"), for: .normal)
-        
-        doctorButton.frame = CGRect(x: 20, y: 524, width: 96, height: 96)
-        doctorButton.setBackgroundImage(UIImage(named:"Meredith Grey"), for: .normal)
-        
-        indianaJonesButton.frame = CGRect(x: 298, y: 524, width: 96, height: 96)
-        indianaJonesButton.setBackgroundImage(UIImage(named:"Indiana Jones"), for: .normal)
-        
-        supermanButton.frame = CGRect(x: 159, y: 188, width: 96, height: 96)
-        supermanButton.setBackgroundImage(UIImage(named:"Superman"), for: .normal)
-        
-        noelButton.frame = CGRect(x: 159, y: 524, width: 96, height: 96)
-        noelButton.setBackgroundImage(UIImage(named:"Papá Noel"), for: .normal)
-        
-//        wolverineButton.frame = CGRect(x: 298, y: 389, width: 96, height: 96)
-//        wolverineButton.setBackgroundImage(UIImage(named:"Lobezno"), for: .normal)
-        
-        spidermanButton.frame = CGRect(x: 298, y: 188, width: 96, height: 96)
-        spidermanButton.setBackgroundImage(UIImage(named:"Spider-Man"), for: .normal)
-
     }
     
     

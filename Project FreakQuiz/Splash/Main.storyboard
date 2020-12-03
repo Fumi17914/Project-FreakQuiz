@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-f8-t9a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-f8-t9a">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f7Q-f8-t9a" secondAttribute="height" multiplier="207:448" id="ZH2-Hg-PYD"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPf-RP-bBR">
                                 <rect key="frame" x="20" y="444" width="374" height="282"/>
@@ -51,12 +53,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZXu-lu-Rip" firstAttribute="trailing" secondItem="3qg-3L-OC6" secondAttribute="trailing" constant="20" id="1eg-GP-vQh"/>
+                            <constraint firstItem="f7Q-f8-t9a" firstAttribute="trailing" secondItem="ZXu-lu-Rip" secondAttribute="trailing" id="44R-qz-80g"/>
                             <constraint firstItem="3qg-3L-OC6" firstAttribute="leading" secondItem="ZXu-lu-Rip" secondAttribute="leading" constant="20" id="5rn-id-OzY"/>
                             <constraint firstItem="ZXu-lu-Rip" firstAttribute="trailing" secondItem="Sjp-Tk-bQu" secondAttribute="trailing" constant="20" id="Ck0-eQ-YgA"/>
+                            <constraint firstAttribute="bottom" secondItem="f7Q-f8-t9a" secondAttribute="bottom" id="D41-Xx-vVp"/>
+                            <constraint firstItem="f7Q-f8-t9a" firstAttribute="leading" secondItem="ZXu-lu-Rip" secondAttribute="leading" id="SVy-co-hpA"/>
                             <constraint firstItem="Sjp-Tk-bQu" firstAttribute="leading" secondItem="ZXu-lu-Rip" secondAttribute="leading" constant="20" id="TNT-WU-kRw"/>
                             <constraint firstItem="kPf-RP-bBR" firstAttribute="leading" secondItem="ZXu-lu-Rip" secondAttribute="leading" constant="20" id="Y3B-gJ-nFH"/>
                             <constraint firstItem="ZXu-lu-Rip" firstAttribute="trailing" secondItem="kPf-RP-bBR" secondAttribute="trailing" constant="20" id="cYY-nX-QTa"/>
                             <constraint firstItem="3qg-3L-OC6" firstAttribute="bottom" secondItem="ZXu-lu-Rip" secondAttribute="bottom" id="mzf-Xg-CSO"/>
+                            <constraint firstItem="f7Q-f8-t9a" firstAttribute="top" secondItem="HVD-Ic-ocz" secondAttribute="top" id="nTK-1T-qSq"/>
                             <constraint firstItem="3qg-3L-OC6" firstAttribute="top" secondItem="kPf-RP-bBR" secondAttribute="bottom" constant="96" id="qm9-LS-AZm"/>
                             <constraint firstItem="Sjp-Tk-bQu" firstAttribute="top" secondItem="ZXu-lu-Rip" secondAttribute="top" id="soJ-Mb-UxR"/>
                         </constraints>

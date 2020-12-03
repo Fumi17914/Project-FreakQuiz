@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-dL-xcc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-dL-xcc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7ph-dL-xcc" secondAttribute="height" multiplier="207:448" id="Tph-GI-9B0"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNTUACIONES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-3y-2Te">
                                 <rect key="frame" x="20" y="44" width="374" height="106"/>
@@ -98,15 +100,19 @@
                             <constraint firstItem="YYA-Ra-2ew" firstAttribute="top" secondItem="hu3-Xn-xps" secondAttribute="bottom" constant="16" id="23r-mt-ZYi"/>
                             <constraint firstItem="lxn-hr-0PM" firstAttribute="leading" secondItem="aZ0-il-cp0" secondAttribute="leading" constant="20" id="ALu-VV-TUw"/>
                             <constraint firstItem="hu3-Xn-xps" firstAttribute="leading" secondItem="aZ0-il-cp0" secondAttribute="leading" constant="271" id="IAg-Ov-lal"/>
+                            <constraint firstItem="7ph-dL-xcc" firstAttribute="top" secondItem="hHR-mc-sWH" secondAttribute="top" id="Lgf-5b-pnB"/>
                             <constraint firstItem="aZ0-il-cp0" firstAttribute="trailing" secondItem="LSh-3y-2Te" secondAttribute="trailing" constant="20" id="Rxu-1U-jTA"/>
                             <constraint firstItem="LSh-3y-2Te" firstAttribute="leading" secondItem="aZ0-il-cp0" secondAttribute="leading" constant="20" id="SGI-mZ-ZTg"/>
                             <constraint firstItem="LSh-3y-2Te" firstAttribute="top" secondItem="aZ0-il-cp0" secondAttribute="top" id="VZL-LT-ZEN"/>
+                            <constraint firstItem="7ph-dL-xcc" firstAttribute="leading" secondItem="aZ0-il-cp0" secondAttribute="leading" id="XyJ-eZ-QdX"/>
                             <constraint firstItem="YYA-Ra-2ew" firstAttribute="leading" secondItem="aZ0-il-cp0" secondAttribute="leading" constant="20" id="pQK-Ky-kru"/>
+                            <constraint firstItem="7ph-dL-xcc" firstAttribute="trailing" secondItem="aZ0-il-cp0" secondAttribute="trailing" id="r1y-Wt-Qva"/>
                             <constraint firstItem="aZ0-il-cp0" firstAttribute="trailing" secondItem="hu3-Xn-xps" secondAttribute="trailing" constant="20" id="tb2-4D-Kcv"/>
                             <constraint firstItem="aZ0-il-cp0" firstAttribute="trailing" secondItem="YYA-Ra-2ew" secondAttribute="trailing" constant="20" id="uEB-xJ-zka"/>
                             <constraint firstItem="hu3-Xn-xps" firstAttribute="top" secondItem="LSh-3y-2Te" secondAttribute="bottom" id="vaT-Wa-FCi"/>
                             <constraint firstItem="lxn-hr-0PM" firstAttribute="bottom" secondItem="aZ0-il-cp0" secondAttribute="bottom" id="xPc-5M-Mb8"/>
                             <constraint firstItem="aZ0-il-cp0" firstAttribute="trailing" secondItem="lxn-hr-0PM" secondAttribute="trailing" constant="20" id="xSf-4Z-IXz"/>
+                            <constraint firstAttribute="bottom" secondItem="7ph-dL-xcc" secondAttribute="bottom" id="zom-pA-COL"/>
                         </constraints>
                     </view>
                     <connections>

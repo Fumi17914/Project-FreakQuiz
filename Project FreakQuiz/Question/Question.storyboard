@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-3Q-zXP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-3Q-zXP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LG4-3Q-zXP" secondAttribute="height" multiplier="207:448" id="I4e-lA-7tt"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BATMAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv8-oV-QfU">
                                 <rect key="frame" x="20" y="44" width="374" height="135"/>
@@ -108,14 +110,18 @@
                             <constraint firstItem="LQn-JI-WzF" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" constant="20" id="CQx-lr-oEK"/>
                             <constraint firstItem="LQn-JI-WzF" firstAttribute="top" secondItem="ewK-Vt-Ykv" secondAttribute="bottom" constant="30" id="HK4-9V-WyR"/>
                             <constraint firstItem="F1E-im-etj" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" constant="20" id="J2Z-pR-evo"/>
+                            <constraint firstItem="LG4-3Q-zXP" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" id="LFf-ub-AF3"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="trailing" secondItem="LQn-JI-WzF" secondAttribute="trailing" constant="20" id="LUp-ay-9va"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="trailing" secondItem="F1E-im-etj" secondAttribute="trailing" constant="20" id="MHw-zp-MWk"/>
                             <constraint firstItem="F1E-im-etj" firstAttribute="top" secondItem="1Ow-c9-weQ" secondAttribute="bottom" constant="30" id="Po9-wH-Cwp"/>
+                            <constraint firstItem="LG4-3Q-zXP" firstAttribute="top" secondItem="bE4-5I-Eau" secondAttribute="top" id="TJi-Sg-ZmQ"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="trailing" secondItem="LX5-Yn-NUE" secondAttribute="trailing" constant="20" id="TJq-YI-Qg6"/>
                             <constraint firstItem="1Ow-c9-weQ" firstAttribute="top" secondItem="cXh-FO-4rc" secondAttribute="bottom" constant="60" id="TYu-fm-wsB"/>
+                            <constraint firstItem="LG4-3Q-zXP" firstAttribute="trailing" secondItem="Imn-Gl-gYN" secondAttribute="trailing" id="TkD-CG-7Ri"/>
                             <constraint firstItem="ewK-Vt-Ykv" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" constant="20" id="aYE-21-E9D"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="bottom" secondItem="LX5-Yn-NUE" secondAttribute="bottom" constant="20" id="d0U-pJ-B94"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="trailing" secondItem="cXh-FO-4rc" secondAttribute="trailing" constant="20" id="feC-Nt-NZ5"/>
+                            <constraint firstAttribute="bottom" secondItem="LG4-3Q-zXP" secondAttribute="bottom" id="fl3-O0-vad"/>
                             <constraint firstItem="LX5-Yn-NUE" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" constant="20" id="iBS-mh-W7Q"/>
                             <constraint firstItem="Imn-Gl-gYN" firstAttribute="trailing" secondItem="ewK-Vt-Ykv" secondAttribute="trailing" constant="20" id="ivC-So-BI2"/>
                             <constraint firstItem="Gv8-oV-QfU" firstAttribute="leading" secondItem="Imn-Gl-gYN" secondAttribute="leading" constant="20" id="kkX-aB-TRz"/>

@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="osB-uz-VND" secondAttribute="height" multiplier="207:448" id="ZQJ-vT-Mhi"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCOGE JUGADOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTK-qe-TWt">
                                 <rect key="frame" x="20" y="44" width="374" height="136"/>
@@ -39,87 +41,132 @@
                                     <segue destination="mg9-a5-gXD" kind="show" identifier="SEGUE_FROM_PLAYERS_TO_READY" id="lVQ-38-RR1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-rU-Ycz">
-                                <rect key="frame" x="20" y="188" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Batman"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="53E-nA-LxJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-RA-ic3">
-                                <rect key="frame" x="159" y="188" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Superman"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="4rk-c3-xEL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-lg-dEx">
-                                <rect key="frame" x="298" y="188" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Spider-Man"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tgi-40-tY6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY1-6G-md9">
-                                <rect key="frame" x="20" y="361" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aventurera"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="dTb-5i-OWl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH7-Bx-Fer">
-                                <rect key="frame" x="20" y="555" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Meredith Grey"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="1hc-O9-5rr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-Qk-wu3">
-                                <rect key="frame" x="159" y="555" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Indiana Jones"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="5B1-mE-0c5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-5h-DmI">
-                                <rect key="frame" x="159" y="361" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Deadpool"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="fyG-P1-BUS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-L6-7XO">
-                                <rect key="frame" x="298" y="361" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Diablo"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="biS-yi-0mn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U57-I9-KCB">
-                                <rect key="frame" x="298" y="555" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Papá Noel"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tq1-S5-84q"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="srg-2i-F6W">
+                                <rect key="frame" x="20" y="187.5" width="374" height="431.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-1r-Eyy">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="109.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-rU-Ycz">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.5" height="109.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Bmj-rU-Ycz" secondAttribute="height" multiplier="1:1" id="uNZ-hQ-I6f"/>
+                                                </constraints>
+                                                <state key="normal" image="Batman"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="53E-nA-LxJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-RA-ic3">
+                                                <rect key="frame" x="132.5" y="0.0" width="109" height="109.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="mCt-RA-ic3" secondAttribute="height" multiplier="1:1" id="S8T-bj-3YN"/>
+                                                </constraints>
+                                                <state key="normal" image="Superman"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="4rk-c3-xEL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-lg-dEx">
+                                                <rect key="frame" x="264.5" y="0.0" width="109.5" height="109.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Tad-lg-dEx" secondAttribute="height" multiplier="1:1" id="rIg-kK-S08"/>
+                                                </constraints>
+                                                <state key="normal" image="Spider-Man"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tgi-40-tY6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="GDl-hf-Owo">
+                                        <rect key="frame" x="0.0" y="174.5" width="374" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY1-6G-md9">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="DY1-6G-md9" secondAttribute="height" multiplier="1:1" id="jTZ-fH-Nl7"/>
+                                                </constraints>
+                                                <state key="normal" image="Aventurera"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="dTb-5i-OWl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-5h-DmI">
+                                                <rect key="frame" x="139" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="b0P-5h-DmI" secondAttribute="height" multiplier="1:1" id="oM9-GC-00e"/>
+                                                </constraints>
+                                                <state key="normal" image="Deadpool"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="fyG-P1-BUS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-L6-7XO">
+                                                <rect key="frame" x="278" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wOc-L6-7XO" secondAttribute="height" multiplier="1:1" id="lqN-Tq-4HW"/>
+                                                </constraints>
+                                                <state key="normal" image="Diablo"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="biS-yi-0mn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-j7-ggs">
+                                        <rect key="frame" x="0.0" y="335.5" width="374" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH7-Bx-Fer">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="eH7-Bx-Fer" secondAttribute="height" multiplier="1:1" id="5ca-bL-SIK"/>
+                                                </constraints>
+                                                <state key="normal" image="Meredith Grey"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="1hc-O9-5rr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-Qk-wu3">
+                                                <rect key="frame" x="139" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UhX-Qk-wu3" secondAttribute="height" multiplier="1:1" id="0UA-x8-tWe"/>
+                                                </constraints>
+                                                <state key="normal" image="Indiana Jones"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="5B1-mE-0c5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U57-I9-KCB">
+                                                <rect key="frame" x="278" y="0.0" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="U57-I9-KCB" secondAttribute="height" multiplier="1:1" id="csg-Wx-Qh3"/>
+                                                </constraints>
+                                                <state key="normal" image="Papá Noel"/>
+                                                <connections>
+                                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tq1-S5-84q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJg-hM-qOh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RJg-hM-qOh" firstAttribute="trailing" secondItem="ftg-fd-rw3" secondAttribute="trailing" constant="152" id="7cm-cp-EpH"/>
+                            <constraint firstAttribute="bottom" secondItem="osB-uz-VND" secondAttribute="bottom" id="AiA-Xn-R0X"/>
                             <constraint firstItem="FTK-qe-TWt" firstAttribute="top" secondItem="RJg-hM-qOh" secondAttribute="top" id="FFN-Po-HWB"/>
                             <constraint firstItem="FTK-qe-TWt" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" constant="20" id="FHt-jD-acx"/>
+                            <constraint firstItem="srg-2i-F6W" firstAttribute="top" secondItem="FTK-qe-TWt" secondAttribute="bottom" constant="7.5" id="IZj-hH-CeI"/>
                             <constraint firstItem="RJg-hM-qOh" firstAttribute="trailing" secondItem="FTK-qe-TWt" secondAttribute="trailing" constant="20" id="MEg-Fb-jvg"/>
+                            <constraint firstAttribute="trailing" secondItem="srg-2i-F6W" secondAttribute="trailing" constant="20" id="SJj-aZ-iG5"/>
                             <constraint firstAttribute="bottom" secondItem="ftg-fd-rw3" secondAttribute="bottom" constant="30" id="gLe-ZC-R3r"/>
+                            <constraint firstItem="osB-uz-VND" firstAttribute="trailing" secondItem="RJg-hM-qOh" secondAttribute="trailing" id="h5w-24-cTH"/>
+                            <constraint firstItem="osB-uz-VND" firstAttribute="top" secondItem="ZYA-bW-3xZ" secondAttribute="top" id="lae-MM-bUx"/>
+                            <constraint firstItem="osB-uz-VND" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" id="rkM-8E-sDu"/>
+                            <constraint firstItem="srg-2i-F6W" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" constant="20" id="zMj-Vx-ocj"/>
                             <constraint firstItem="ftg-fd-rw3" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" constant="152" id="zvI-aY-B8p"/>
                         </constraints>
                     </view>

@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2be-FJ-mPo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2be-FJ-mPo">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2be-FJ-mPo" secondAttribute="height" multiplier="207:448" id="Zt6-B3-6H7"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TURNO DE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-Uw-TGj">
                                 <rect key="frame" x="20" y="44" width="374" height="136"/>
@@ -58,14 +60,18 @@
                         <viewLayoutGuide key="safeArea" id="4BJ-uo-1hh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2be-FJ-mPo" secondAttribute="bottom" id="82U-M6-8dO"/>
                             <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="Dg8-17-kUe" secondAttribute="trailing" constant="17" id="MbT-x6-XU4"/>
                             <constraint firstItem="u1p-PZ-B3k" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="20" id="QPB-bR-uKN"/>
                             <constraint firstItem="LFA-Uw-TGj" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="20" id="RgY-eL-LaP"/>
                             <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="u1p-PZ-B3k" secondAttribute="trailing" constant="20" id="S3D-Gq-1Dk"/>
+                            <constraint firstItem="2be-FJ-mPo" firstAttribute="top" secondItem="PoH-Pd-096" secondAttribute="top" id="SVl-CD-Qn3"/>
                             <constraint firstItem="4BJ-uo-1hh" firstAttribute="bottom" secondItem="Dg8-17-kUe" secondAttribute="bottom" constant="12" id="W6X-9u-LfT"/>
+                            <constraint firstItem="2be-FJ-mPo" firstAttribute="trailing" secondItem="4BJ-uo-1hh" secondAttribute="trailing" id="Yiz-1r-KNm"/>
                             <constraint firstItem="LFA-Uw-TGj" firstAttribute="top" secondItem="4BJ-uo-1hh" secondAttribute="top" id="dnN-cf-ZLP"/>
                             <constraint firstItem="Dg8-17-kUe" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="23" id="mNE-HB-Q6w"/>
                             <constraint firstItem="u1p-PZ-B3k" firstAttribute="top" secondItem="BAT-hJ-jFD" secondAttribute="bottom" constant="57" id="r7l-GK-GZh"/>
+                            <constraint firstItem="2be-FJ-mPo" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" id="sCE-19-7U1"/>
                             <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="BAT-hJ-jFD" secondAttribute="trailing" constant="20" id="vvt-Gz-tgM"/>
                             <constraint firstItem="BAT-hJ-jFD" firstAttribute="top" secondItem="LFA-Uw-TGj" secondAttribute="bottom" constant="8" symbolic="YES" id="xRb-S7-rz2"/>
                             <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="LFA-Uw-TGj" secondAttribute="trailing" constant="20" id="ymz-d0-k0W"/>
