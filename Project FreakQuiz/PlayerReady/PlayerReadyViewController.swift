@@ -50,9 +50,7 @@ class PlayerReadyViewController: UIViewController {
     // MARK: Configurar letra de textos
     private func configureFont() {
         playerLabel.font = UIFont(name: "PixelEmulator", size: playerLabel.font.pointSize)
-        readyToPlayLabel.font = UIFont (name: "PixelEmulator", size: playerLabel.font.pointSize)
-        readyToPlayLabel.textColor = .white
-        
+        readyToPlayLabel.font = UIFont (name: "PixelEmulator", size: playerLabel.font.pointSize)        
     }
 }
 
