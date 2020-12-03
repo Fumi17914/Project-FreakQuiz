@@ -12,4 +12,8 @@ class SplashViewController: UIViewController {
     // MARK: Segues
     private let segueIdentifier = "SEGUE_FROM_SPLASH_TO_MODE"
     
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
 }
