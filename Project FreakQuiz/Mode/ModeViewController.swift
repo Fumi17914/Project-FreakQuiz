@@ -8,7 +8,7 @@
 import UIKit
 
 class ModeViewController: UIViewController {
-
+    
     // MARK: Outlets
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -26,7 +26,7 @@ class ModeViewController: UIViewController {
     private let segueIdentifier = "SEGUE_FROM_MODE_TO_PLAYERS"
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-          return .lightContent
+        return .lightContent
     }
     
     // MARK: ViewDidLoad
@@ -37,9 +37,9 @@ class ModeViewController: UIViewController {
         configureViews()
         configureFont()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
-
+        
     }
-
+    
     // MARK: Configurar vistas (sombra, cornerRadius...)
     private func configureViews() {
         easyMarioMode.configure()
@@ -57,8 +57,8 @@ class ModeViewController: UIViewController {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
                                                  ofType: "json"),
-                
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+               
+               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
                 return jsonData
             }
         } catch {
@@ -77,6 +77,7 @@ class ModeViewController: UIViewController {
             let data = try decoder.decode(GameData.self, from: jsonData)
             Game.shared.questions = data.questions
             Game.shared.tests = data.tests
+            
             
         } catch {
             print(error.localizedDescription)

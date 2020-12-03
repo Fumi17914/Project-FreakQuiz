@@ -11,7 +11,7 @@
 		D85E26472577F1FB00D20A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E26462577F1FB00D20A74 /* SceneDelegate.swift */; };
 		D85E264F2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D85E264D2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld */; };
 		D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85E26502577F1FD00D20A74 /* Assets.xcassets */; };
-		D8966B80257825E600707EA6 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8966B7F257825E600707EA6 /* Launch.storyboard */; };
+		D8966B80257825E600707EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8966B7F257825E600707EA6 /* LaunchScreen.storyboard */; };
 		D8C619E025782A7200D22206 /* Mode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619DF25782A7200D22206 /* Mode.storyboard */; };
 		D8C619E325782A7F00D22206 /* ChoosePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619E225782A7F00D22206 /* ChoosePlayer.storyboard */; };
 		D8C619E625782A8B00D22206 /* PlayerReady.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619E525782A8B00D22206 /* PlayerReady.storyboard */; };
@@ -50,7 +50,7 @@
 		D85E264E2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_FreakQuiz.xcdatamodel; sourceTree = "<group>"; };
 		D85E26502577F1FD00D20A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85E26552577F1FD00D20A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8966B7F257825E600707EA6 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		D8966B7F257825E600707EA6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C619DF25782A7200D22206 /* Mode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mode.storyboard; sourceTree = "<group>"; };
 		D8C619E225782A7F00D22206 /* ChoosePlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoosePlayer.storyboard; sourceTree = "<group>"; };
 		D8C619E525782A8B00D22206 /* PlayerReady.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerReady.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		D8C619F025782AAC00D22206 /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		D8C619F325782AB800D22206 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		D8C619F625782AC200D22206 /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Score.storyboard; sourceTree = "<group>"; };
-		D8C619F925782AF700D22206 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		D8C619F925782AF700D22206 /* ModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
 		D8C619FC25782B0900D22206 /* ChoosePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayerViewController.swift; sourceTree = "<group>"; };
 		D8C619FF25782B1C00D22206 /* PlayerReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerReadyViewController.swift; sourceTree = "<group>"; };
 		D8C61A0225782B2800D22206 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		D8C61A312578313F00D22206 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
 		D8C61A342578314800D22206 /* Arcade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.ttf; sourceTree = "<group>"; };
 		D8C61A372578314F00D22206 /* Kratos.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kratos.otf; sourceTree = "<group>"; };
-		D8F8A357257921C60047D701 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D8F8A357257921C60047D701 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D8F8A35B257921DA0047D701 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 		D8966B762578249E00707EA6 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				D8966B7F257825E600707EA6 /* Launch.storyboard */,
+				D8966B7F257825E600707EA6 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				D8C61A2F2578313200D22206 /* Mario.ttf in Resources */,
 				D8C619F425782AB800D22206 /* Test.storyboard in Resources */,
 				D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */,
-				D8966B80257825E600707EA6 /* Launch.storyboard in Resources */,
+				D8966B80257825E600707EA6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josefumanal.Project-FreakQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josefumanal.Project-FreakQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
