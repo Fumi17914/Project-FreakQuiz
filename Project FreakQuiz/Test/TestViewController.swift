@@ -11,15 +11,15 @@ class TestViewController: UIViewController {
     
     //MARK: Outlets
     @IBOutlet weak var playerLabel: UILabel!
-    @IBOutlet weak var proofLabel: UILabel!
+    @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var nextQuestionButton: UIButton!
     @IBOutlet weak var imageContinue: UIImageView!
     @IBOutlet weak var starButton: UIButton!
     
     // MARK: Variables
     var testPlayer: String = "User"
-    private let identifierScore = "SEGUE_FROM_PROVE_TO_SCORE"
-    private let identifierReady = "SEGUE_FROM_PROVE_TO_READY"
+    private let identifierScore = "SEGUE_FROM_TEST_TO_SCORE"
+    private let identifierReady = "SEGUE_FROM_TEST_TO_READY"
     private let proof = Game.shared.test.randomElement()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,7 +37,7 @@ class TestViewController: UIViewController {
         configureImage()
         
         playerLabel.text = testPlayer
-        proofLabel.text = Game.shared.test
+        testLabel.text = Game.shared.test
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
         starButton.frame = CGRect(x: 355, y: 44, width: 44, height: 42)
@@ -47,7 +47,7 @@ class TestViewController: UIViewController {
     // MARK: Configura letra de los textos
     private func configureFont() {
         playerLabel.font = UIFont(name: "PixelEmulator", size: playerLabel.font.pointSize)
-        proofLabel.font = UIFont(name: "PixelEmulator", size: proofLabel.font.pointSize)
+        testLabel.font = UIFont(name: "PixelEmulator", size: testLabel.font.pointSize)
         nextQuestionButton.titleLabel?.font = UIFont(name: "PixelEmulator", size: 20)
         
     }

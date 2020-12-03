@@ -41,6 +41,9 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="AgA-wU-8VL" eventType="touchUpInside" id="1VG-Zi-mM6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1E-im-etj">
                                 <rect key="frame" x="20" y="530" width="374" height="54"/>
@@ -49,6 +52,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="AgA-wU-8VL" eventType="touchUpInside" id="lvK-t1-OuC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewK-Vt-Ykv">
                                 <rect key="frame" x="20" y="614" width="374" height="54"/>
@@ -57,6 +63,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="AgA-wU-8VL" eventType="touchUpInside" id="0Ke-0B-62C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQn-JI-WzF">
                                 <rect key="frame" x="20" y="698" width="374" height="54"/>
@@ -65,6 +74,9 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="AgA-wU-8VL" eventType="touchUpInside" id="SmC-kA-177"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-Yn-NUE">
                                 <rect key="frame" x="20" y="807" width="374" height="36"/>
@@ -85,11 +97,33 @@
                         <outlet property="countDown" destination="LX5-Yn-NUE" id="oJc-tH-k8z"/>
                         <outlet property="playerLabel" destination="Gv8-oV-QfU" id="a4N-GB-59l"/>
                         <outlet property="questionLabel" destination="cXh-FO-4rc" id="fV2-N7-aBj"/>
+                        <segue destination="CzR-Q9-Pcw" kind="show" identifier="SEGUE_FROM_QUESTION_TO_CORRECT" id="6hv-n1-ScS"/>
+                        <segue destination="f1m-qk-vac" kind="show" identifier="SEGUE_FROM_QUESTION_TO_ERROR" id="NUC-RF-BoS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7P-s1-UiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-395.6521739130435" y="119.86607142857142"/>
+        </scene>
+        <!--Correct-->
+        <scene sceneID="7dX-kE-49T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Correct" id="CzR-Q9-Pcw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EST-m2-mLf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUu-Vk-W8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="20"/>
+        </scene>
+        <!--Error-->
+        <scene sceneID="j8v-2d-L60">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Error" id="f1m-qk-vac" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oto-Z5-jhY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BH-Zq-Auv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="245"/>
         </scene>
     </scenes>
     <resources>
