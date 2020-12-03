@@ -59,6 +59,17 @@ class ScoreViewController: UIViewController {
             }
         }
     }
+    
+    private func configureImage() {
+        switch Game.shared.mode {
+        case .easy:
+            nextQuestionButton.setImage(UIImage(named: "continueEasy"), for: .normal)
+
+        case .hard:
+            nextQuestionButton.setImage(UIImage(named: "continueDifficult"), for: .normal)
+
+        }
+    }
 }
 
 extension ScoreViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {

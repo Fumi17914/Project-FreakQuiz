@@ -64,8 +64,12 @@ class ErrorViewController: UIViewController {
         switch Game.shared.mode {
         case .easy:
             imageNextQuestion.image = UIImage(named: "luigi")
+            buttonView.setImage(UIImage(named: "penanceEasy"), for: .normal)
+
         case .hard:
             imageNextQuestion.image = UIImage(named: "bart")
+            buttonView.setImage(UIImage(named: "penanceDifficult"), for: .normal)
+
         }
     }
 }

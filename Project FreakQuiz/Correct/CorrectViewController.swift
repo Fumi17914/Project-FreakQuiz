@@ -48,8 +48,12 @@ class CorrectViewController: UIViewController {
         switch Game.shared.mode {
         case .easy:
             centralImage.image = UIImage(named: "marioWin")
+            nextQuestionButton.setImage(UIImage(named: "nextQuestionEasy"), for: .normal)
+
         case .hard:
             centralImage.image = UIImage(named: "benderApplause")
+            nextQuestionButton.setImage(UIImage(named: "nextQuestionDifficult"), for: .normal)
+
         }
     }
 }

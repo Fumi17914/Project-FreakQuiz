@@ -57,8 +57,12 @@ class TestViewController: UIViewController {
         switch Game.shared.mode {
         case .easy:
             imageContinue.image = UIImage(named: "luigisMansion")
+            nextQuestionButton.setImage(UIImage(named: "nextQuestionEasy"), for: .normal)
+
         case .hard:
             imageContinue.image = UIImage(named: "zoidberg")
+            nextQuestionButton.setImage(UIImage(named: "nextQuestionDifficult"), for: .normal)
+
         }
     }
     
