@@ -20,107 +20,119 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ESCOGE JUGADOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTK-qe-TWt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCOGE JUGADOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTK-qe-TWt">
                                 <rect key="frame" x="20" y="44" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FTK-qe-TWt" secondAttribute="height" multiplier="11:4" id="ZuC-P4-vg3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.99740880730000003" green="0.8014108539" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-fd-rw3">
-                                <rect key="frame" x="152" y="776" width="110" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-fd-rw3">
+                                <rect key="frame" x="152" y="780" width="110" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ftg-fd-rw3" secondAttribute="height" multiplier="55:43" id="Wax-iX-unb"/>
+                                </constraints>
                                 <state key="normal" image="redButton"/>
                                 <connections>
                                     <segue destination="mg9-a5-gXD" kind="show" identifier="SEGUE_FROM_PLAYERS_TO_READY" id="lVQ-38-RR1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-Qs-ujo">
-                                <rect key="frame" x="159" y="188" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Superman"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="e9m-mi-fdd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKR-4M-2IV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-rU-Ycz">
                                 <rect key="frame" x="20" y="188" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Batman"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="gin-hV-Ipq"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="53E-nA-LxJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zT-vb-4Vk">
-                                <rect key="frame" x="20" y="356" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-RA-ic3">
+                                <rect key="frame" x="159" y="188" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Aventurera"/>
+                                <state key="normal" image="Superman"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="Gnw-Ek-QsC"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="4rk-c3-xEL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnR-aV-Ilw">
-                                <rect key="frame" x="20" y="524" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Meredith Grey"/>
-                                <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="65F-j9-ymA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2a-My-9BR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-lg-dEx">
                                 <rect key="frame" x="298" y="188" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Spider-Man"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="KAc-1P-Etf"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tgi-40-tY6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-1d-WI1">
-                                <rect key="frame" x="159" y="356" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY1-6G-md9">
+                                <rect key="frame" x="20" y="361" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Deadpool"/>
+                                <state key="normal" image="Aventurera"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="1V7-cs-7ON"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="dTb-5i-OWl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TX-er-3wB">
-                                <rect key="frame" x="298" y="356" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH7-Bx-Fer">
+                                <rect key="frame" x="20" y="555" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Diablo"/>
+                                <state key="normal" image="Meredith Grey"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="u2z-f3-tz2"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="1hc-O9-5rr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-3g-Ibc">
-                                <rect key="frame" x="298" y="524" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-Qk-wu3">
+                                <rect key="frame" x="159" y="555" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Indiana Jones"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="PKg-a6-p3t"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="5B1-mE-0c5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URO-b7-SAl">
-                                <rect key="frame" x="159" y="524" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-5h-DmI">
+                                <rect key="frame" x="159" y="361" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Deadpool"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="fyG-P1-BUS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-L6-7XO">
+                                <rect key="frame" x="298" y="361" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Diablo"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="biS-yi-0mn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U57-I9-KCB">
+                                <rect key="frame" x="298" y="555" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Papá Noel"/>
                                 <connections>
-                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="QDx-k2-mvs"/>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="tq1-S5-84q"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJg-hM-qOh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RJg-hM-qOh" firstAttribute="trailing" secondItem="ftg-fd-rw3" secondAttribute="trailing" constant="152" id="7cm-cp-EpH"/>
+                            <constraint firstItem="FTK-qe-TWt" firstAttribute="top" secondItem="RJg-hM-qOh" secondAttribute="top" id="FFN-Po-HWB"/>
+                            <constraint firstItem="FTK-qe-TWt" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" constant="20" id="FHt-jD-acx"/>
+                            <constraint firstItem="RJg-hM-qOh" firstAttribute="trailing" secondItem="FTK-qe-TWt" secondAttribute="trailing" constant="20" id="MEg-Fb-jvg"/>
+                            <constraint firstAttribute="bottom" secondItem="ftg-fd-rw3" secondAttribute="bottom" constant="30" id="gLe-ZC-R3r"/>
+                            <constraint firstItem="ftg-fd-rw3" firstAttribute="leading" secondItem="RJg-hM-qOh" secondAttribute="leading" constant="152" id="zvI-aY-B8p"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="batmanButton" destination="ZKR-4M-2IV" id="9sA-RF-okh"/>
-                        <outlet property="deadpoolButton" destination="Rx2-1d-WI1" id="gOI-kk-oat"/>
-                        <outlet property="devilButton" destination="2TX-er-3wB" id="615-x2-9t6"/>
-                        <outlet property="doctorButton" destination="QnR-aV-Ilw" id="2bZ-Li-QaY"/>
-                        <outlet property="girlButton" destination="8zT-vb-4Vk" id="gjq-Z9-VYD"/>
-                        <outlet property="indianaJonesButton" destination="fwa-3g-Ibc" id="GPv-4D-WKX"/>
-                        <outlet property="noelButton" destination="URO-b7-SAl" id="TvN-yR-USA"/>
-                        <outlet property="spidermanButton" destination="I2a-My-9BR" id="zts-YU-gSf"/>
-                        <outlet property="supermanButton" destination="Ixr-Qs-ujo" id="70X-F3-9Ag"/>
+                        <outlet property="batmanButton" destination="Bmj-rU-Ycz" id="ytd-5G-tot"/>
+                        <outlet property="deadpoolButton" destination="b0P-5h-DmI" id="OTV-XT-U4D"/>
+                        <outlet property="devilButton" destination="wOc-L6-7XO" id="UPP-GZ-Zjj"/>
+                        <outlet property="doctorButton" destination="eH7-Bx-Fer" id="eZu-kU-z7U"/>
+                        <outlet property="girlButton" destination="DY1-6G-md9" id="HTi-ix-wHn"/>
+                        <outlet property="indianaJonesButton" destination="UhX-Qk-wu3" id="x9u-Zo-5RM"/>
+                        <outlet property="noelButton" destination="U57-I9-KCB" id="K6q-Iu-dJo"/>
+                        <outlet property="spidermanButton" destination="Tad-lg-dEx" id="Nnp-6A-lcI"/>
+                        <outlet property="supermanButton" destination="mCt-RA-ic3" id="c9h-be-RGq"/>
                         <outlet property="titleLabel" destination="FTK-qe-TWt" id="DkR-Qh-hPD"/>
                     </connections>
                 </viewController>

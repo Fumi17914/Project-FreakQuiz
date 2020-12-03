@@ -17,7 +17,6 @@ class SplashViewController: UIViewController {
           return .lightContent
     }
     
-    
     // MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
