@@ -12,7 +12,7 @@
 		D85E264F2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D85E264D2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld */; };
 		D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85E26502577F1FD00D20A74 /* Assets.xcassets */; };
 		D8966B80257825E600707EA6 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8966B7F257825E600707EA6 /* Launch.storyboard */; };
-		D8C619E025782A7200D22206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619DF25782A7200D22206 /* Main.storyboard */; };
+		D8C619E025782A7200D22206 /* Mode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619DF25782A7200D22206 /* Mode.storyboard */; };
 		D8C619E325782A7F00D22206 /* ChoosePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619E225782A7F00D22206 /* ChoosePlayer.storyboard */; };
 		D8C619E625782A8B00D22206 /* PlayerReady.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619E525782A8B00D22206 /* PlayerReady.storyboard */; };
 		D8C619E925782A9500D22206 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C619E825782A9500D22206 /* Question.storyboard */; };
@@ -39,6 +39,8 @@
 		D8C61A322578313F00D22206 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A312578313F00D22206 /* Pixel.ttf */; };
 		D8C61A352578314800D22206 /* Arcade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A342578314800D22206 /* Arcade.ttf */; };
 		D8C61A382578314F00D22206 /* Kratos.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A372578314F00D22206 /* Kratos.otf */; };
+		D8F8A358257921C60047D701 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8A357257921C60047D701 /* SplashViewController.swift */; };
+		D8F8A35C257921DA0047D701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F8A35B257921DA0047D701 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +51,7 @@
 		D85E26502577F1FD00D20A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85E26552577F1FD00D20A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8966B7F257825E600707EA6 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
-		D8C619DF25782A7200D22206 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D8C619DF25782A7200D22206 /* Mode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mode.storyboard; sourceTree = "<group>"; };
 		D8C619E225782A7F00D22206 /* ChoosePlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoosePlayer.storyboard; sourceTree = "<group>"; };
 		D8C619E525782A8B00D22206 /* PlayerReady.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerReady.storyboard; sourceTree = "<group>"; };
 		D8C619E825782A9500D22206 /* Question.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Question.storyboard; sourceTree = "<group>"; };
@@ -70,12 +72,14 @@
 		D8C61A1825782E2D00D22206 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		D8C61A1B25782E3800D22206 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D8C61A1E25782E4400D22206 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
+		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
 		D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtensions.swift; sourceTree = "<group>"; };
 		D8C61A2E2578313200D22206 /* Mario.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mario.ttf; sourceTree = "<group>"; };
 		D8C61A312578313F00D22206 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
 		D8C61A342578314800D22206 /* Arcade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.ttf; sourceTree = "<group>"; };
 		D8C61A372578314F00D22206 /* Kratos.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kratos.otf; sourceTree = "<group>"; };
+		D8F8A357257921C60047D701 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D8F8A35B257921DA0047D701 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				D85E26502577F1FD00D20A74 /* Assets.xcassets */,
-				D8C61A2D2578311200D22206 /* Fonts */,
-				D8C61A2B257830F300D22206 /* Delegate */,
 				D8C61A2525782EB800D22206 /* Extensions */,
+				D8C61A2B257830F300D22206 /* Delegate */,
+				D8C61A2D2578311200D22206 /* Fonts */,
 				D8C61A1425782B7300D22206 /* Sample */,
 				D8966B762578249E00707EA6 /* Launch */,
+				D8F8A3562579218D0047D701 /* Splash */,
 				D8966B77257824A700707EA6 /* Mode */,
 				D8966B78257824AD00707EA6 /* ChoosePlayer */,
 				D8966B79257824B500707EA6 /* PlayerReady */,
@@ -139,7 +144,7 @@
 		D8966B77257824A700707EA6 /* Mode */ = {
 			isa = PBXGroup;
 			children = (
-				D8C619DF25782A7200D22206 /* Main.storyboard */,
+				D8C619DF25782A7200D22206 /* Mode.storyboard */,
 				D8C619F925782AF700D22206 /* ModeViewController.swift */,
 			);
 			path = Mode;
@@ -249,6 +254,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D8F8A3562579218D0047D701 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D8F8A357257921C60047D701 /* SplashViewController.swift */,
+				D8F8A35B257921DA0047D701 /* Main.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,8 +328,9 @@
 				D8C619E325782A7F00D22206 /* ChoosePlayer.storyboard in Resources */,
 				D8C61A382578314F00D22206 /* Kratos.otf in Resources */,
 				D8C619E925782A9500D22206 /* Question.storyboard in Resources */,
+				D8F8A35C257921DA0047D701 /* Main.storyboard in Resources */,
 				D8C61A352578314800D22206 /* Arcade.ttf in Resources */,
-				D8C619E025782A7200D22206 /* Main.storyboard in Resources */,
+				D8C619E025782A7200D22206 /* Mode.storyboard in Resources */,
 				D8C61A2F2578313200D22206 /* Mario.ttf in Resources */,
 				D8C619F425782AB800D22206 /* Test.storyboard in Resources */,
 				D85E26512577F1FD00D20A74 /* Assets.xcassets in Resources */,
@@ -344,6 +359,7 @@
 				D8C619FA25782AF700D22206 /* ModeViewController.swift in Sources */,
 				D8C61A1225782B5E00D22206 /* ScoreViewCell.swift in Sources */,
 				D8C61A1925782E2D00D22206 /* GameData.swift in Sources */,
+				D8F8A358257921C60047D701 /* SplashViewController.swift in Sources */,
 				D8C61A0925782B3D00D22206 /* ErrorViewController.swift in Sources */,
 				D8C61A1C25782E3800D22206 /* Player.swift in Sources */,
 				D8C61A0625782B3200D22206 /* CorrectViewController.swift in Sources */,

@@ -14,7 +14,7 @@ class ModeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var easyMarioMode: UIButton!
-    @IBOutlet weak var difficultKratosMode: UIButton!
+    @IBOutlet weak var difficultFreakMode: UIButton!
     
     @IBAction func chooseMode (_ sender: UIButton) {
         Game.shared.mode = (sender.tag == 0) ? .easy : .hard
@@ -43,7 +43,7 @@ class ModeViewController: UIViewController {
     // MARK: Configurar vistas (sombra, cornerRadius...)
     private func configureViews() {
         easyMarioMode.configure()
-        difficultKratosMode.configure()
+        difficultFreakMode.configure()
     }
     
     // MARK: Configurar tipo de letra en textos
