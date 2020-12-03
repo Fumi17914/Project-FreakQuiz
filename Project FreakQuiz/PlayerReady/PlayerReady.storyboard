@@ -20,35 +20,57 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TURNO DE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-Uw-TGj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TURNO DE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-Uw-TGj">
                                 <rect key="frame" x="20" y="44" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LFA-Uw-TGj" secondAttribute="height" multiplier="11:4" id="4s4-9a-hWm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.99740880730000003" green="0.8014108539" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BATMAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAT-hJ-jFD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BATMAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAT-hJ-jFD">
                                 <rect key="frame" x="20" y="188" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BAT-hJ-jFD" secondAttribute="height" multiplier="11:4" id="5UX-Zl-We5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-17-kUe">
-                                <rect key="frame" x="23" y="813" width="374" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-17-kUe">
+                                <rect key="frame" x="23" y="812" width="374" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dg8-17-kUe" secondAttribute="height" multiplier="187:19" id="pkb-vS-Xaz"/>
+                                </constraints>
                                 <state key="normal" image="pressStart"/>
                                 <connections>
                                     <segue destination="tpb-i8-NP7" kind="show" identifier="SEGUE_FROM_READY_TO_QUESTION" id="K1T-tR-Hgq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Batman" translatesAutoresizingMaskIntoConstraints="NO" id="u1p-PZ-B3k">
-                                <rect key="frame" x="20" y="381" width="374" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Batman" translatesAutoresizingMaskIntoConstraints="NO" id="u1p-PZ-B3k">
+                                <rect key="frame" x="20" y="381" width="374" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u1p-PZ-B3k" secondAttribute="height" multiplier="374:265" id="epE-f1-r4P"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4BJ-uo-1hh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="Dg8-17-kUe" secondAttribute="trailing" constant="17" id="MbT-x6-XU4"/>
+                            <constraint firstItem="u1p-PZ-B3k" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="20" id="QPB-bR-uKN"/>
+                            <constraint firstItem="LFA-Uw-TGj" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="20" id="RgY-eL-LaP"/>
+                            <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="u1p-PZ-B3k" secondAttribute="trailing" constant="20" id="S3D-Gq-1Dk"/>
+                            <constraint firstItem="4BJ-uo-1hh" firstAttribute="bottom" secondItem="Dg8-17-kUe" secondAttribute="bottom" constant="12" id="W6X-9u-LfT"/>
+                            <constraint firstItem="LFA-Uw-TGj" firstAttribute="top" secondItem="4BJ-uo-1hh" secondAttribute="top" id="dnN-cf-ZLP"/>
+                            <constraint firstItem="Dg8-17-kUe" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="23" id="mNE-HB-Q6w"/>
+                            <constraint firstItem="u1p-PZ-B3k" firstAttribute="top" secondItem="BAT-hJ-jFD" secondAttribute="bottom" constant="57" id="r7l-GK-GZh"/>
+                            <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="BAT-hJ-jFD" secondAttribute="trailing" constant="20" id="vvt-Gz-tgM"/>
+                            <constraint firstItem="BAT-hJ-jFD" firstAttribute="top" secondItem="LFA-Uw-TGj" secondAttribute="bottom" constant="8" symbolic="YES" id="xRb-S7-rz2"/>
+                            <constraint firstItem="4BJ-uo-1hh" firstAttribute="trailing" secondItem="LFA-Uw-TGj" secondAttribute="trailing" constant="20" id="ymz-d0-k0W"/>
+                            <constraint firstItem="BAT-hJ-jFD" firstAttribute="leading" secondItem="4BJ-uo-1hh" secondAttribute="leading" constant="20" id="zlh-cR-3al"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="playerImageView" destination="u1p-PZ-B3k" id="eqa-bT-3Ui"/>
