@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-pF-cta">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-pF-cta">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HUH-pF-cta" secondAttribute="height" multiplier="207:448" id="CeP-in-fb9"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fX8-mM-i46">
                                 <rect key="frame" x="20" y="44" width="374" height="357"/>
@@ -31,6 +33,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A36-IR-Aai"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HUH-pF-cta" secondAttribute="bottom" id="ajj-Bf-pQX"/>
+                            <constraint firstItem="HUH-pF-cta" firstAttribute="top" secondItem="iN3-S3-eWE" secondAttribute="top" id="an5-7F-bXl"/>
+                            <constraint firstItem="HUH-pF-cta" firstAttribute="leading" secondItem="A36-IR-Aai" secondAttribute="leading" id="ot0-SR-APb"/>
+                            <constraint firstItem="HUH-pF-cta" firstAttribute="trailing" secondItem="A36-IR-Aai" secondAttribute="trailing" id="yT5-M6-u30"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cig-wR-mbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
