@@ -8,14 +8,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Choose Players View Controller-->
+        <!--Choose Player View Controller-->
         <scene sceneID="6y6-eV-FBk">
             <objects>
-                <viewController id="cy9-35-7wF" customClass="ChoosePlayersViewController" customModule="Project_FreakQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cy9-35-7wF" customClass="ChoosePlayerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZYA-bW-3xZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ESCOGE JUGADOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTK-qe-TWt">
                                 <rect key="frame" x="20" y="44" width="374" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,10 +107,6 @@
                                     <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="QDx-k2-mvs"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJg-hM-qOh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
