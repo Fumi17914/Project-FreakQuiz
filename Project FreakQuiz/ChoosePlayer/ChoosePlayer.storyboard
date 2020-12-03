@@ -16,12 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ESCOGE JUGADOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTK-qe-TWt">
-                                <rect key="frame" x="20" y="44" width="374" height="168"/>
+                                <rect key="frame" x="20" y="44" width="374" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.99740880730000003" green="0.8014108539" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -31,19 +27,129 @@
                                 <rect key="frame" x="152" y="776" width="110" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="redButton"/>
+                                <connections>
+                                    <segue destination="mg9-a5-gXD" kind="show" identifier="SEGUE_FROM_PLAYERS_TO_READY" id="lVQ-38-RR1"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-Qs-ujo">
+                                <rect key="frame" x="159" y="188" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Superman"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="e9m-mi-fdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKR-4M-2IV">
+                                <rect key="frame" x="20" y="188" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Batman"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="gin-hV-Ipq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zT-vb-4Vk">
+                                <rect key="frame" x="20" y="356" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Aventurera"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="Gnw-Ek-QsC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnR-aV-Ilw">
+                                <rect key="frame" x="20" y="524" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Meredith Grey"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="65F-j9-ymA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2a-My-9BR">
+                                <rect key="frame" x="298" y="188" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Spider-Man"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="KAc-1P-Etf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-1d-WI1">
+                                <rect key="frame" x="159" y="356" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Deadpool"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="1V7-cs-7ON"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TX-er-3wB">
+                                <rect key="frame" x="298" y="356" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Diablo"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="u2z-f3-tz2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-3g-Ibc">
+                                <rect key="frame" x="298" y="524" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Indiana Jones"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="PKg-a6-p3t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URO-b7-SAl">
+                                <rect key="frame" x="159" y="524" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Papá Noel"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="cy9-35-7wF" eventType="touchUpInside" id="QDx-k2-mvs"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="osB-uz-VND">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJg-hM-qOh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="batmanButton" destination="ZKR-4M-2IV" id="9sA-RF-okh"/>
+                        <outlet property="deadpoolButton" destination="Rx2-1d-WI1" id="gOI-kk-oat"/>
+                        <outlet property="devilButton" destination="2TX-er-3wB" id="615-x2-9t6"/>
+                        <outlet property="doctorButton" destination="QnR-aV-Ilw" id="2bZ-Li-QaY"/>
+                        <outlet property="girlButton" destination="8zT-vb-4Vk" id="gjq-Z9-VYD"/>
+                        <outlet property="indianaJonesButton" destination="fwa-3g-Ibc" id="GPv-4D-WKX"/>
+                        <outlet property="noelButton" destination="URO-b7-SAl" id="TvN-yR-USA"/>
+                        <outlet property="spidermanButton" destination="I2a-My-9BR" id="zts-YU-gSf"/>
+                        <outlet property="supermanButton" destination="Ixr-Qs-ujo" id="70X-F3-9Ag"/>
+                        <outlet property="titleLabel" destination="FTK-qe-TWt" id="DkR-Qh-hPD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJx-hJ-xjM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-382.60869565217394" y="71.651785714285708"/>
         </scene>
+        <!--PlayerReady-->
+        <scene sceneID="uiA-BH-rr8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerReady" id="mg9-a5-gXD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OGj-iM-y7t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXc-UA-4iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="72"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Aventurera" width="265" height="265"/>
         <image name="Background" width="207" height="448"/>
+        <image name="Batman" width="265" height="265"/>
+        <image name="Deadpool" width="265" height="265"/>
+        <image name="Diablo" width="265" height="265"/>
+        <image name="Indiana Jones" width="265" height="265"/>
+        <image name="Meredith Grey" width="265" height="265"/>
+        <image name="Papá Noel" width="265" height="265"/>
+        <image name="Spider-Man" width="265" height="265"/>
+        <image name="Superman" width="265" height="265"/>
         <image name="redButton" width="270" height="205"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
