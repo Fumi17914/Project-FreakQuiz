@@ -20,7 +20,7 @@ class TestViewController: UIViewController {
     var testPlayer: String = "User"
     private let identifierScore = "SEGUE_FROM_TEST_TO_SCORE"
     private let identifierReady = "SEGUE_FROM_TEST_TO_READY"
-    private let proof = Game.shared.test.randomElement()
+    private let test = Game.shared.test.randomElement()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
           return .lightContent
