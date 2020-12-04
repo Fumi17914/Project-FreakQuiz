@@ -38,7 +38,7 @@
                                     <action selector="chooseMode:" destination="ysO-2L-K4f" eventType="touchUpInside" id="ejN-TX-eZT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-TJ-9Zv">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-TJ-9Zv">
                                 <rect key="frame" x="20" y="459" width="374" height="231"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PWN-TJ-9Zv" secondAttribute="height" multiplier="34:21" id="ow8-d0-Hui"/>
