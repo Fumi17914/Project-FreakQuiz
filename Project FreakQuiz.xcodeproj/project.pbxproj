@@ -72,7 +72,7 @@
 		D8C61A1825782E2D00D22206 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		D8C61A1B25782E3800D22206 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D8C61A1E25782E4400D22206 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
+		D8C61A2125782E5400D22206 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; usesTabs = 0; };
 		D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtensions.swift; sourceTree = "<group>"; };
 		D8C61A2E2578313200D22206 /* Mario.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mario.ttf; sourceTree = "<group>"; };
 		D8C61A312578313F00D22206 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
