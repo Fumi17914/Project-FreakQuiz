@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84039B4257AA3980018E4E8 /* sampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A2125782E5400D22206 /* sampleData.json */; };
 		D85E26452577F1FB00D20A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E26442577F1FB00D20A74 /* AppDelegate.swift */; };
 		D85E26472577F1FB00D20A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E26462577F1FB00D20A74 /* SceneDelegate.swift */; };
 		D85E264F2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D85E264D2577F1FB00D20A74 /* Project_FreakQuiz.xcdatamodeld */; };
@@ -33,7 +34,6 @@
 		D8C61A1925782E2D00D22206 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1825782E2D00D22206 /* GameData.swift */; };
 		D8C61A1C25782E3800D22206 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1B25782E3800D22206 /* Player.swift */; };
 		D8C61A1F25782E4400D22206 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A1E25782E4400D22206 /* Question.swift */; };
-		D8C61A2225782E5400D22206 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2125782E5400D22206 /* sampleData.json */; };
 		D8C61A2725782EF400D22206 /* UIVIewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C61A2625782EF400D22206 /* UIVIewExtensions.swift */; };
 		D8C61A2F2578313200D22206 /* Mario.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A2E2578313200D22206 /* Mario.ttf */; };
 		D8C61A322578313F00D22206 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8C61A312578313F00D22206 /* Pixel.ttf */; };
@@ -323,6 +323,7 @@
 				D8C619E625782A8B00D22206 /* PlayerReady.storyboard in Resources */,
 				D8C619F125782AAC00D22206 /* Error.storyboard in Resources */,
 				D8C619EE25782AA300D22206 /* Correct.storyboard in Resources */,
+				D84039B4257AA3980018E4E8 /* sampleData.json in Resources */,
 				D8C61A322578313F00D22206 /* Pixel.ttf in Resources */,
 				D8C619F725782AC200D22206 /* Score.storyboard in Resources */,
 				D8C619E325782A7F00D22206 /* ChoosePlayer.storyboard in Resources */,
@@ -363,7 +364,6 @@
 				D8C61A0925782B3D00D22206 /* ErrorViewController.swift in Sources */,
 				D8C61A1C25782E3800D22206 /* Player.swift in Sources */,
 				D8C61A0625782B3200D22206 /* CorrectViewController.swift in Sources */,
-				D8C61A2225782E5400D22206 /* sampleData.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
