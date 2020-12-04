@@ -32,6 +32,7 @@ class ScoreViewController: UIViewController {
         configureFont()
         configureTable()
         updatePlayers()
+        configureImage()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
 

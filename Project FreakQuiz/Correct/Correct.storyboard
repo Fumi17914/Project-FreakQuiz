@@ -27,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qHt-rt-27v" secondAttribute="height" multiplier="268:135" id="4bS-L3-SCl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.99740880730000003" green="0.8014108539" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>

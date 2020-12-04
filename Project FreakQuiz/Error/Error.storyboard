@@ -37,7 +37,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="P9H-MY-xTO" secondAttribute="height" multiplier="374:135" id="2IL-57-fBV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.92316091060000005" green="0.2211299837" blue="0.1960324645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
