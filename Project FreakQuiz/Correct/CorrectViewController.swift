@@ -26,7 +26,7 @@ class CorrectViewController: UIViewController {
         super.viewDidLoad()
         
         nextQuestionButton.configure()
-        Game.shared.configureBackgroundColor(button: nextQuestionButton)
+//        Game.shared.configureBackgroundColor(button: nextQuestionButton)
         configureImage()
        
 

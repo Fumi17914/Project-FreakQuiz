@@ -59,11 +59,20 @@ class QuestionViewController: UIViewController {
         configureViews()
         configureFont()
         generateOptionsToQuestion()
-    
-        Game.shared.configureBackgroundColor(button: answerOneButton)
+        
+        
+        if Game.shared.mode == .hard {
+            answerOneButton.backgroundColor = .red
+            answerTwoButton.backgroundColor = .red
+            answerThreeButton.backgroundColor = .red
+            answerFourButton.backgroundColor = .red
+            
+        }
+        
+        /*Game.shared.configureBackgroundColor(button: answerOneButton)
         Game.shared.configureBackgroundColor(button: answerTwoButton)
         Game.shared.configureBackgroundColor(button: answerThreeButton)
-        Game.shared.configureBackgroundColor(button: answerFourButton)
+        Game.shared.configureBackgroundColor(button: answerFourButton)*/
         
         playerLabel.text = finalPlayerQuestion
         

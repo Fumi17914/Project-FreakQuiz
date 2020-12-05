@@ -60,12 +60,12 @@ class Game {
     }
     
     // MARK: Configurar color de las views según modo
-    func configureBackgroundColor(button: UIButton) {
+    /*func configureBackgroundColor(button: UIButton) {
         switch Game.shared.mode {
         case .easy:
             button.backgroundColor = UIColor(named: "F7B500")
         case .hard:
             button.backgroundColor = UIColor(named: "EC3832")
         }
-    }
+    }*/
 }

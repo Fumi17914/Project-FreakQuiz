@@ -32,7 +32,7 @@ class ErrorViewController: UIViewController {
         super.viewDidLoad()
         
         buttonView.configure()
-        Game.shared.configureBackgroundColor(button: buttonView)
+//        Game.shared.configureBackgroundColor(button: buttonView)
         configureFont()
         configureImage()
         correctAnswer.text = correct

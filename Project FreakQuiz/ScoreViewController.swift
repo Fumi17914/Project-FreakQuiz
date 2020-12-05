@@ -28,7 +28,7 @@ class ScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextQuestionButton.configure()
-        Game.shared.configureBackgroundColor(button: nextQuestionButton)
+//        Game.shared.configureBackgroundColor(button: nextQuestionButton)
         configureFont()
         configureTable()
         updatePlayers()
