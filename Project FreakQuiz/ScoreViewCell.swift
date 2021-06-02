@@ -10,13 +10,13 @@ import UIKit
 class ScoreViewCell: UITableViewCell {
     
     // MARK: Outlets
-    @IBOutlet weak var playerLabel: UILabel!
+    @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var scorePlayerLabel: UILabel!
     @IBOutlet weak var cellView: UIView!
     
     
     override func prepareForReuse() {
-        playerLabel.text = nil
+        playerImage.image = UIImage(named: "")
         scorePlayerLabel.text = nil
     }
     
@@ -28,13 +28,13 @@ class ScoreViewCell: UITableViewCell {
     
     // MARK: Configurar cell
     func configureCell (player: String, score: String) {
-        playerLabel.text = player
+        playerImage.image = UIImage(named: player)
         scorePlayerLabel.text = "\(score)"
     }
     
     // MARK: Configurar letra de textos
     private func configureFont() {
-        playerLabel.font = UIFont(name: "PixelEmulator", size: 15)
+        //playerLabel.font = UIFont(name: "PixelEmulator", size: 15)
         scorePlayerLabel.font = UIFont(name: "PixelEmulator", size: 15)
     }
 }

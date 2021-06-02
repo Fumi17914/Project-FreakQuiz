@@ -31,7 +31,7 @@ class QuestionViewController: UIViewController {
                     player.updateScore(1)
                 }
             }
-            print("COMPROBAR QUE FUNCIOAN updateScore: \(Game.shared.scoreAndPlayers)")
+            print("COMPROBAR QUE FUNCIONAN updateScore: \(Game.shared.scoreAndPlayers)")
         } else {
             navigate(to: identifierError, data: correctAnswerPlayer)
         }
